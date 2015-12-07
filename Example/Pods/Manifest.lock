@@ -1,0 +1,14 @@
+PODS:
+  - ImageManager (0.1.0)
+
+DEPENDENCIES:
+  - ImageManager (from `../`)
+
+EXTERNAL SOURCES:
+  ImageManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ImageManager: 552c514a945b123998cc2dd0cd0fdc46aa505c45
+
+COCOAPODS: 0.39.0
