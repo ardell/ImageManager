@@ -7,79 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56A01DC629A6C9BF6D3E59574C215958 /* Pods-ImageManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 059E752816AF6C932CEC9A060964D667 /* Pods-ImageManager_Tests-dummy.m */; };
-		739E91214D7638D662E33BCDC94B8FD1 /* ImageManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9699A03E8C2BAC7CF6120BBB773DB32 /* ImageManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		775676421550FB03A777CBDBCCE56249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		7FBCB7705C6A83B84538FEEAC2B431B5 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C08F1E1660CB172EF290D887278E53F1 /* ReplaceMe.m */; };
-		8A33267C6D9CC9C0A4010C733C289EB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8C40B6A3B30A01BBB8A970A4D084E817 /* ImageManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C245632215800ECB238AAE286AD75C3 /* ImageManager.bundle */; };
-		917A75749CCE516DE7748B6D4E746053 /* Pods-ImageManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE1147CC42BEC62A880B1B8D26E9C1D /* Pods-ImageManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD188C499028D8045062A8C529B9BA65 /* ImageManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D004E35C640DD7D9858B686052383 /* ImageManager-dummy.m */; };
+		04EA5EDBE042945A879CD60775B8223F /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 14601438F1679AE1C0A5C687395C63F9 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3185BAF7815446462F89224F5DBB8C5F /* IMGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE520F1E24628023DB5ECB45625B2C9 /* IMGImage.m */; };
+		3E96D85088F1E9D557326FA4C0A2D470 /* PMKPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3DBE24658420AFD2AD1E9FF21FD7B /* PMKPromise.m */; };
+		56E8C32FB9D5578E7F8AA3DFC8D3DFF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8836F6AB1A1C5A4872721A79EEC431F4 /* Foundation.framework */; };
+		5A52107D497813984481F835E415F1F4 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F95E300DF1F1AD4985B3CA3ED2443F79 /* PromiseKit-dummy.m */; };
+		71C926F29F20FEA508559711872064C5 /* Promise.h in Headers */ = {isa = PBXBuildFile; fileRef = 058270C61DE3E3CBC856725E561E5355 /* Promise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADE75FE1C164EDB00163968 /* IMGAssetsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADE75FC1C164EDB00163968 /* IMGAssetsLibrary.h */; };
+		8ADE75FF1C164EDB00163968 /* IMGAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE75FD1C164EDB00163968 /* IMGAssetsLibrary.m */; };
+		8ADE76021C16535E00163968 /* IMGDocumentsDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADE76001C16535E00163968 /* IMGDocumentsDirectory.h */; };
+		8ADE76031C16535E00163968 /* IMGDocumentsDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE76011C16535E00163968 /* IMGDocumentsDirectory.m */; };
+		96094E98D18A79FB5F7F8B6DAD232533 /* Pods-ImageManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 059E752816AF6C932CEC9A060964D667 /* Pods-ImageManager_Tests-dummy.m */; };
+		A13393BF52A21A80615524251D3C806C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8836F6AB1A1C5A4872721A79EEC431F4 /* Foundation.framework */; };
+		A3C11D70A18D6DD2D7AD6B3D05249423 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384ABEB1988DD9E4FDD7BF2635F16FE3 /* PromiseKit.framework */; };
+		B0FFA918BFCF969C27FD54C518A014FE /* ImageManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9699A03E8C2BAC7CF6120BBB773DB32 /* ImageManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C85C46D27E34E256172012238AC83813 /* Pods-ImageManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE1147CC42BEC62A880B1B8D26E9C1D /* Pods-ImageManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41A79DF2A0138E7C719B3B2C73AB8DA /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4017C455CC3FC7B198FE91FAC15505F1 /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D46E919B47208958183E59CB9E629F27 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = D81305780EA0DA834F0FE4BC3AF19B17 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8F3F306C1F702CF2FD6B67973B8ECAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8836F6AB1A1C5A4872721A79EEC431F4 /* Foundation.framework */; };
+		ED353799A726C1FAAA84B13BF7AC49B5 /* IMGImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 87428664940E8728547AAE49BB54E474 /* IMGImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F32CC0490A5293F9C3AB3A2FEFC96836 /* ImageManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FD806F162286D68C7FB5A942B47586D /* ImageManager.bundle */; };
+		FD38DA2E9AED4E1C4A94E7D520E9710D /* ImageManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7D004E35C640DD7D9858B686052383 /* ImageManager-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4E6EC323B77C3E5F7B84058C87084F51 /* PBXContainerItemProxy */ = {
+		5CF2132CE8B04479012CFF827B8FC1CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 480700FEB94CA1AAAD0D2BB1E1D3A1B8;
-			remoteInfo = ImageManager;
-		};
-		85F41BBD79374BCA9E98E44E9F3646DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D52AF265F4AFEA70CF0387A69B1DEE41;
+			remoteGlobalIDString = EAE4A41EE79AD234FBE52DD5D2B17054;
 			remoteInfo = "ImageManager-ImageManager";
+		};
+		6A7B426F36CBB27676C19BB135920336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E35D7FF0D514BAC0A8962B4C9AC205D;
+			remoteInfo = PromiseKit;
+		};
+		82E6C30552F7E97BBBD0AEEEB85E669A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E35D7FF0D514BAC0A8962B4C9AC205D;
+			remoteInfo = PromiseKit;
+		};
+		8C3FFB7A194AA8146154EBDD1CC021C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2238D53915C3247E7477AEFAEFC977BF;
+			remoteInfo = ImageManager;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		058270C61DE3E3CBC856725E561E5355 /* Promise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Promise.h; path = objc/PromiseKit/Promise.h; sourceTree = "<group>"; };
 		059E752816AF6C932CEC9A060964D667 /* Pods-ImageManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageManager_Tests-dummy.m"; sourceTree = "<group>"; };
 		142957E3189EBA58349684085A010275 /* Pods-ImageManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		14601438F1679AE1C0A5C687395C63F9 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = objc/PromiseKit.h; sourceTree = "<group>"; };
 		1BC3DB957A39F9513EA7247E90A7C695 /* ImageManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageManager-prefix.pch"; sourceTree = "<group>"; };
+		20E0F560DF7920CFA46FB1EF41968CD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E6CACA8943DDC8E9E9FAB400968795 /* Pods-ImageManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B05833720DF7B7CC8A558567AAF8BA4 /* ImageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE1147CC42BEC62A880B1B8D26E9C1D /* Pods-ImageManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		33EB3C0DC6F7A3C1B80736EE2F234363 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		375493DF75BB9D16A9B4BD58BEACF995 /* Pods-ImageManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		384ABEB1988DD9E4FDD7BF2635F16FE3 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F16D1513D21198094A97276A127DBF3 /* Pods-ImageManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4017C455CC3FC7B198FE91FAC15505F1 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
 		4439672831D7CF64CE0A97D8B040250A /* Pods-ImageManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4C08A9C00DB6C797129A5898ED5523E0 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD806F162286D68C7FB5A942B47586D /* ImageManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		562E6DB4062E4D7ECE8EA98FBBA4E12D /* Pods_ImageManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5638EF7B9E616FCF7FE921266181F484 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
+		7CC3DBE24658420AFD2AD1E9FF21FD7B /* PMKPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PMKPromise.m; path = objc/PMKPromise.m; sourceTree = "<group>"; };
+		7F27C082A769914D448C722C968C7672 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		87428664940E8728547AAE49BB54E474 /* IMGImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IMGImage.h; sourceTree = "<group>"; };
+		8836F6AB1A1C5A4872721A79EEC431F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8889F3CB1F1C289B7FF9481D5C6E6DD0 /* ImageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADE75FC1C164EDB00163968 /* IMGAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAssetsLibrary.h; sourceTree = "<group>"; };
+		8ADE75FD1C164EDB00163968 /* IMGAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAssetsLibrary.m; sourceTree = "<group>"; };
+		8ADE76001C16535E00163968 /* IMGDocumentsDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGDocumentsDirectory.h; sourceTree = "<group>"; };
+		8ADE76011C16535E00163968 /* IMGDocumentsDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGDocumentsDirectory.m; sourceTree = "<group>"; };
+		8FE520F1E24628023DB5ECB45625B2C9 /* IMGImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IMGImage.m; sourceTree = "<group>"; };
 		905B33E2653A379DAF440DDF2218275E /* Pods-ImageManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImageManager_Tests.modulemap"; sourceTree = "<group>"; };
 		976F28BB980ECDF7A7AA7319675C4D6E /* Pods-ImageManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9C245632215800ECB238AAE286AD75C3 /* ImageManager.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageManager.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F95102AE9A1F9C6DF67FFDB115C9B87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageManager.xcconfig; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C08F1E1660CB172EF290D887278E53F1 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		D81305780EA0DA834F0FE4BC3AF19B17 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = objc/PromiseKit/fwd.h; sourceTree = "<group>"; };
 		D9699A03E8C2BAC7CF6120BBB773DB32 /* ImageManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageManager-umbrella.h"; sourceTree = "<group>"; };
 		DE7270C6898C0DDFB666BBD40F4745F0 /* ImageManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageManager.modulemap; sourceTree = "<group>"; };
 		E1617DD4163B9FCC623AA0783CBE90EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F454CCFD082775E7EE81CCE469C1ACE6 /* Pods_ImageManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95E300DF1F1AD4985B3CA3ED2443F79 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		FD7D004E35C640DD7D9858B686052383 /* ImageManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageManager-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		20937FE616E2B765F1F03E096C557FA5 /* Frameworks */ = {
+		8A3B0AD96BD899DEE71BCBBED5785BF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13393BF52A21A80615524251D3C806C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D0F63DFC2A738012E8C4F2FE5069E99 /* Frameworks */ = {
+		9E021F4A1301BBF70D9FD1D09DE40749 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A33267C6D9CC9C0A4010C733C289EB4 /* Foundation.framework in Frameworks */,
+				56E8C32FB9D5578E7F8AA3DFC8D3DFF5 /* Foundation.framework in Frameworks */,
+				A3C11D70A18D6DD2D7AD6B3D05249423 /* PromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFB27D614A06BEE7AE717AFEE39C6DB9 /* Frameworks */ = {
+		AC10E5A2C1158F932E640D8E760EFA47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775676421550FB03A777CBDBCCE56249 /* Foundation.framework in Frameworks */,
+				D8F3F306C1F702CF2FD6B67973B8ECAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBD933EEE36806B5B57BBE6392D266F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,20 +147,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0BE0C449F95D6661143B94617445AD10 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C08F1E1660CB172EF290D887278E53F1 /* ReplaceMe.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		161F7A7483E280D5A2C6C5307595F984 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D744CC0C760605453EF3B3A8D65AB4F3 /* ImageManager */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1B779F34D69E313B6A8CF4541596FF2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20E0F560DF7920CFA46FB1EF41968CD3 /* Info.plist */,
+				33EB3C0DC6F7A3C1B80736EE2F234363 /* PromiseKit.modulemap */,
+				5638EF7B9E616FCF7FE921266181F484 /* PromiseKit.xcconfig */,
+				F95E300DF1F1AD4985B3CA3ED2443F79 /* PromiseKit-dummy.m */,
+				7F27C082A769914D448C722C968C7672 /* PromiseKit-prefix.pch */,
+				4017C455CC3FC7B198FE91FAC15505F1 /* PromiseKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromiseKit";
 			sourceTree = "<group>";
 		};
 		2F55283EA2F22F3B209D53B577C4A0BE /* Support Files */ = {
@@ -122,6 +181,37 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ImageManager";
+			sourceTree = "<group>";
+		};
+		365271A0864C30532C4B8C253A15A1D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				384ABEB1988DD9E4FDD7BF2635F16FE3 /* PromiseKit.framework */,
+				FBE8CAFF4B1962A06B4DFD746EFE0D50 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57C2972C728CC1DEDE80B2C7E711ADB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD806F162286D68C7FB5A942B47586D /* ImageManager.bundle */,
+				8889F3CB1F1C289B7FF9481D5C6E6DD0 /* ImageManager.framework */,
+				562E6DB4062E4D7ECE8EA98FBBA4E12D /* Pods_ImageManager_Tests.framework */,
+				4C08A9C00DB6C797129A5898ED5523E0 /* PromiseKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59801BE77EC7252BD4BCAF7C9F713DD8 /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				D81305780EA0DA834F0FE4BC3AF19B17 /* fwd.h */,
+				7CC3DBE24658420AFD2AD1E9FF21FD7B /* PMKPromise.m */,
+				058270C61DE3E3CBC856725E561E5355 /* Promise.h */,
+				14601438F1679AE1C0A5C687395C63F9 /* PromiseKit.h */,
+			);
+			name = Promise;
 			sourceTree = "<group>";
 		};
 		6082AC6F855C4F8B4321C94534A6155B /* Pods-ImageManager_Tests */ = {
@@ -142,127 +232,173 @@
 			path = "Target Support Files/Pods-ImageManager_Tests";
 			sourceTree = "<group>";
 		};
+		7A2B3162960AE7F2742F42C2D8A0DBA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6F2E56C40A04E1AF3A7FC5854B08C26 /* PromiseKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB147FA68A0C33097D32D5252989AFE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EC4801B71A093520BCBBB8817F8A14D6 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				161F7A7483E280D5A2C6C5307595F984 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A988BCBE18082F58C444DAF0AC77E84A /* Products */,
+				365271A0864C30532C4B8C253A15A1D4 /* Frameworks */,
+				7A2B3162960AE7F2742F42C2D8A0DBA8 /* Pods */,
+				57C2972C728CC1DEDE80B2C7E711ADB4 /* Products */,
 				039DC764F544747BDBB7F44BA71C2C52 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		A988BCBE18082F58C444DAF0AC77E84A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9C245632215800ECB238AAE286AD75C3 /* ImageManager.bundle */,
-				2B05833720DF7B7CC8A558567AAF8BA4 /* ImageManager.framework */,
-				F454CCFD082775E7EE81CCE469C1ACE6 /* Pods_ImageManager_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B2E373533D2D60AAA2C35427334CCD42 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0BE0C449F95D6661143B94617445AD10 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D744CC0C760605453EF3B3A8D65AB4F3 /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
-				B2E373533D2D60AAA2C35427334CCD42 /* Pod */,
+				7DB147FA68A0C33097D32D5252989AFE /* Pod */,
 				2F55283EA2F22F3B209D53B577C4A0BE /* Support Files */,
 			);
 			name = ImageManager;
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		EC4801B71A093520BCBBB8817F8A14D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				87428664940E8728547AAE49BB54E474 /* IMGImage.h */,
+				8FE520F1E24628023DB5ECB45625B2C9 /* IMGImage.m */,
+				8ADE75FC1C164EDB00163968 /* IMGAssetsLibrary.h */,
+				8ADE75FD1C164EDB00163968 /* IMGAssetsLibrary.m */,
+				8ADE76001C16535E00163968 /* IMGDocumentsDirectory.h */,
+				8ADE76011C16535E00163968 /* IMGDocumentsDirectory.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F6F2E56C40A04E1AF3A7FC5854B08C26 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				59801BE77EC7252BD4BCAF7C9F713DD8 /* Promise */,
+				1B779F34D69E313B6A8CF4541596FF2F /* Support Files */,
+			);
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		FBE8CAFF4B1962A06B4DFD746EFE0D50 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8836F6AB1A1C5A4872721A79EEC431F4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		420615F22E7FDA194533D413F2FDF7E9 /* Headers */ = {
+		2A94B1AF16BF7988E03B2D7346A1C3AA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				917A75749CCE516DE7748B6D4E746053 /* Pods-ImageManager_Tests-umbrella.h in Headers */,
+				C85C46D27E34E256172012238AC83813 /* Pods-ImageManager_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4DD6AF2339000728C8A6F17F2C11053 /* Headers */ = {
+		B402F1C4D45246DFAE4325E87309AAB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739E91214D7638D662E33BCDC94B8FD1 /* ImageManager-umbrella.h in Headers */,
+				D46E919B47208958183E59CB9E629F27 /* fwd.h in Headers */,
+				71C926F29F20FEA508559711872064C5 /* Promise.h in Headers */,
+				D41A79DF2A0138E7C719B3B2C73AB8DA /* PromiseKit-umbrella.h in Headers */,
+				04EA5EDBE042945A879CD60775B8223F /* PromiseKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5F19A567718E2FAD96C826D04BB702 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FFA918BFCF969C27FD54C518A014FE /* ImageManager-umbrella.h in Headers */,
+				8ADE76021C16535E00163968 /* IMGDocumentsDirectory.h in Headers */,
+				8ADE75FE1C164EDB00163968 /* IMGAssetsLibrary.h in Headers */,
+				ED353799A726C1FAAA84B13BF7AC49B5 /* IMGImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		480700FEB94CA1AAAD0D2BB1E1D3A1B8 /* ImageManager */ = {
+		2238D53915C3247E7477AEFAEFC977BF /* ImageManager */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3C3C516E92CB6B19237C1F6843273EF /* Build configuration list for PBXNativeTarget "ImageManager" */;
+			buildConfigurationList = B6BB41747E0B3F4D126CB4B75303B7BA /* Build configuration list for PBXNativeTarget "ImageManager" */;
 			buildPhases = (
-				61548A52DBBD51BD595639CD965E4801 /* Sources */,
-				CFB27D614A06BEE7AE717AFEE39C6DB9 /* Frameworks */,
-				4FADAB87A083F94DFFBE04506C65BAF5 /* Resources */,
-				F4DD6AF2339000728C8A6F17F2C11053 /* Headers */,
+				D37E41CAAEEB5256928ADCC3D5FDFEA7 /* Sources */,
+				9E021F4A1301BBF70D9FD1D09DE40749 /* Frameworks */,
+				DE648D6331E78C42BB511D1BE163E932 /* Resources */,
+				FD5F19A567718E2FAD96C826D04BB702 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FCBF8134A81EB861B2045BE550A1B972 /* PBXTargetDependency */,
+				988E5BF64D575B7C190B27EC214DF3DB /* PBXTargetDependency */,
+				460DA0423A29AE9EF5E751E571121203 /* PBXTargetDependency */,
 			);
 			name = ImageManager;
 			productName = ImageManager;
-			productReference = 2B05833720DF7B7CC8A558567AAF8BA4 /* ImageManager.framework */;
+			productReference = 8889F3CB1F1C289B7FF9481D5C6E6DD0 /* ImageManager.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		49ADBC31E2C91B452ADA81AF9243298B /* Pods-ImageManager_Tests */ = {
+		242E0E3EE21D1AA8F36B4501D46C315C /* Pods-ImageManager_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 629D4C77643881666FBE4AAA88A08AC5 /* Build configuration list for PBXNativeTarget "Pods-ImageManager_Tests" */;
+			buildConfigurationList = 9FA49A0C9097276458F0575CDAE99268 /* Build configuration list for PBXNativeTarget "Pods-ImageManager_Tests" */;
 			buildPhases = (
-				8A69C93C82057F8DCC997596B216A7F7 /* Sources */,
-				6D0F63DFC2A738012E8C4F2FE5069E99 /* Frameworks */,
-				420615F22E7FDA194533D413F2FDF7E9 /* Headers */,
+				5E95E48B43158248F1CAB703A1070B72 /* Sources */,
+				8A3B0AD96BD899DEE71BCBBED5785BF3 /* Frameworks */,
+				2A94B1AF16BF7988E03B2D7346A1C3AA /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9DED1987CF3090C2E2DE4D84B9E296A7 /* PBXTargetDependency */,
+				F41DB249D1FE725165F25B6EAB0E961D /* PBXTargetDependency */,
+				6291B9C4AF5B296CB58136AEE67C4F63 /* PBXTargetDependency */,
 			);
 			name = "Pods-ImageManager_Tests";
 			productName = "Pods-ImageManager_Tests";
-			productReference = F454CCFD082775E7EE81CCE469C1ACE6 /* Pods_ImageManager_Tests.framework */;
+			productReference = 562E6DB4062E4D7ECE8EA98FBBA4E12D /* Pods_ImageManager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D52AF265F4AFEA70CF0387A69B1DEE41 /* ImageManager-ImageManager */ = {
+		4E35D7FF0D514BAC0A8962B4C9AC205D /* PromiseKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D022E6FF20FA5B93A56B7D24F9D28D1 /* Build configuration list for PBXNativeTarget "ImageManager-ImageManager" */;
+			buildConfigurationList = 8204A4DA68F98FF9E0ADEC81BD39D44C /* Build configuration list for PBXNativeTarget "PromiseKit" */;
 			buildPhases = (
-				D66C3D540CC3AF60E1D77E43A1C0C0E4 /* Sources */,
-				20937FE616E2B765F1F03E096C557FA5 /* Frameworks */,
-				F0CCC2D8B0A113A796A6896198D787C5 /* Resources */,
+				59D94F51952DEBD723AE0D86DBE0A47E /* Sources */,
+				AC10E5A2C1158F932E640D8E760EFA47 /* Frameworks */,
+				B402F1C4D45246DFAE4325E87309AAB4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromiseKit;
+			productName = PromiseKit;
+			productReference = 4C08A9C00DB6C797129A5898ED5523E0 /* PromiseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAE4A41EE79AD234FBE52DD5D2B17054 /* ImageManager-ImageManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4AF07160AF2303E17CB628F08F9831C /* Build configuration list for PBXNativeTarget "ImageManager-ImageManager" */;
+			buildPhases = (
+				3CE14CD161DFB4E63AA29D1E31B685B3 /* Sources */,
+				EFBD933EEE36806B5B57BBE6392D266F /* Frameworks */,
+				FAFCC3385662A12A819251C0F8F6D492 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -270,7 +406,7 @@
 			);
 			name = "ImageManager-ImageManager";
 			productName = "ImageManager-ImageManager";
-			productReference = 9C245632215800ECB238AAE286AD75C3 /* ImageManager.bundle */;
+			productReference = 4FD806F162286D68C7FB5A942B47586D /* ImageManager.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -290,27 +426,28 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A988BCBE18082F58C444DAF0AC77E84A /* Products */;
+			productRefGroup = 57C2972C728CC1DEDE80B2C7E711ADB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				480700FEB94CA1AAAD0D2BB1E1D3A1B8 /* ImageManager */,
-				D52AF265F4AFEA70CF0387A69B1DEE41 /* ImageManager-ImageManager */,
-				49ADBC31E2C91B452ADA81AF9243298B /* Pods-ImageManager_Tests */,
+				2238D53915C3247E7477AEFAEFC977BF /* ImageManager */,
+				EAE4A41EE79AD234FBE52DD5D2B17054 /* ImageManager-ImageManager */,
+				242E0E3EE21D1AA8F36B4501D46C315C /* Pods-ImageManager_Tests */,
+				4E35D7FF0D514BAC0A8962B4C9AC205D /* PromiseKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4FADAB87A083F94DFFBE04506C65BAF5 /* Resources */ = {
+		DE648D6331E78C42BB511D1BE163E932 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C40B6A3B30A01BBB8A970A4D084E817 /* ImageManager.bundle in Resources */,
+				F32CC0490A5293F9C3AB3A2FEFC96836 /* ImageManager.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0CCC2D8B0A113A796A6896198D787C5 /* Resources */ = {
+		FAFCC3385662A12A819251C0F8F6D492 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,83 +457,129 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		61548A52DBBD51BD595639CD965E4801 /* Sources */ = {
+		3CE14CD161DFB4E63AA29D1E31B685B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD188C499028D8045062A8C529B9BA65 /* ImageManager-dummy.m in Sources */,
-				7FBCB7705C6A83B84538FEEAC2B431B5 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A69C93C82057F8DCC997596B216A7F7 /* Sources */ = {
+		59D94F51952DEBD723AE0D86DBE0A47E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A01DC629A6C9BF6D3E59574C215958 /* Pods-ImageManager_Tests-dummy.m in Sources */,
+				3E96D85088F1E9D557326FA4C0A2D470 /* PMKPromise.m in Sources */,
+				5A52107D497813984481F835E415F1F4 /* PromiseKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D66C3D540CC3AF60E1D77E43A1C0C0E4 /* Sources */ = {
+		5E95E48B43158248F1CAB703A1070B72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96094E98D18A79FB5F7F8B6DAD232533 /* Pods-ImageManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D37E41CAAEEB5256928ADCC3D5FDFEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD38DA2E9AED4E1C4A94E7D520E9710D /* ImageManager-dummy.m in Sources */,
+				3185BAF7815446462F89224F5DBB8C5F /* IMGImage.m in Sources */,
+				8ADE76031C16535E00163968 /* IMGDocumentsDirectory.m in Sources */,
+				8ADE75FF1C164EDB00163968 /* IMGAssetsLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9DED1987CF3090C2E2DE4D84B9E296A7 /* PBXTargetDependency */ = {
+		460DA0423A29AE9EF5E751E571121203 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ImageManager;
-			target = 480700FEB94CA1AAAD0D2BB1E1D3A1B8 /* ImageManager */;
-			targetProxy = 4E6EC323B77C3E5F7B84058C87084F51 /* PBXContainerItemProxy */;
+			name = PromiseKit;
+			target = 4E35D7FF0D514BAC0A8962B4C9AC205D /* PromiseKit */;
+			targetProxy = 6A7B426F36CBB27676C19BB135920336 /* PBXContainerItemProxy */;
 		};
-		FCBF8134A81EB861B2045BE550A1B972 /* PBXTargetDependency */ = {
+		6291B9C4AF5B296CB58136AEE67C4F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 4E35D7FF0D514BAC0A8962B4C9AC205D /* PromiseKit */;
+			targetProxy = 82E6C30552F7E97BBBD0AEEEB85E669A /* PBXContainerItemProxy */;
+		};
+		988E5BF64D575B7C190B27EC214DF3DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ImageManager-ImageManager";
-			target = D52AF265F4AFEA70CF0387A69B1DEE41 /* ImageManager-ImageManager */;
-			targetProxy = 85F41BBD79374BCA9E98E44E9F3646DF /* PBXContainerItemProxy */;
+			target = EAE4A41EE79AD234FBE52DD5D2B17054 /* ImageManager-ImageManager */;
+			targetProxy = 5CF2132CE8B04479012CFF827B8FC1CD /* PBXContainerItemProxy */;
+		};
+		F41DB249D1FE725165F25B6EAB0E961D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageManager;
+			target = 2238D53915C3247E7477AEFAEFC977BF /* ImageManager */;
+			targetProxy = 8C3FFB7A194AA8146154EBDD1CC021C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+		0BB240637BD319FECB0CD939A81FC267 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageManager/ImageManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageManager/ImageManager.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ImageManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		2CEB9280B21C00EEF041A4A9F84D2D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F16D1513D21198094A97276A127DBF3 /* Pods-ImageManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ImageManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ImageManager_Tests/Pods-ImageManager_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_ImageManager_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -428,14 +611,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		5B377D82EEF56F41CDE4201350BB772D /* Debug */ = {
+		64E1CAC8734A9DE284748EF87C3C5DC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = ImageManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6A25DF86110A994DA04108FA5EF46782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
 			buildSettings = {
@@ -447,7 +642,95 @@
 			};
 			name = Debug;
 		};
-		5F12ECCA3DF5AF31EBB5D1A49B56DDA6 /* Debug */ = {
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FA8B39DAF7D0C176B425526D7A35288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5638EF7B9E616FCF7FE921266181F484 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8227B3D0C645FB301E703640FCBF67D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5638EF7B9E616FCF7FE921266181F484 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E42F65C414563B04411898D91EF43596 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
 			buildSettings = {
@@ -461,7 +744,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ImageManager/ImageManager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ImageManager/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ImageManager/ImageManager.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -474,49 +757,7 @@
 			};
 			name = Debug;
 		};
-		651643719F7895F51A889DDABC4E02C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ImageManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		AA072D669C293788E879A414587E1D88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F16D1513D21198094A97276A127DBF3 /* Pods-ImageManager_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ImageManager_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ImageManager_Tests/Pods-ImageManager_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ImageManager_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B907005F2FC4B4A6DE330EFE6BD81663 /* Release */ = {
+		E9DED010325A28795687349BA9C90FC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 976F28BB980ECDF7A7AA7319675C4D6E /* Pods-ImageManager_Tests.release.xcconfig */;
 			buildSettings = {
@@ -529,7 +770,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-ImageManager_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ImageManager_Tests/Pods-ImageManager_Tests.modulemap";
@@ -546,68 +787,50 @@
 			};
 			name = Release;
 		};
-		C63E9EA42837D5A4CCCAFB821913313F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB72BA0016CE892A4A0F0713ACABD5C6 /* ImageManager.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ImageManager/ImageManager-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ImageManager/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ImageManager/ImageManager.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ImageManager;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D022E6FF20FA5B93A56B7D24F9D28D1 /* Build configuration list for PBXNativeTarget "ImageManager-ImageManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B377D82EEF56F41CDE4201350BB772D /* Debug */,
-				651643719F7895F51A889DDABC4E02C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		629D4C77643881666FBE4AAA88A08AC5 /* Build configuration list for PBXNativeTarget "Pods-ImageManager_Tests" */ = {
+		8204A4DA68F98FF9E0ADEC81BD39D44C /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AA072D669C293788E879A414587E1D88 /* Debug */,
-				B907005F2FC4B4A6DE330EFE6BD81663 /* Release */,
+				8227B3D0C645FB301E703640FCBF67D9 /* Debug */,
+				7FA8B39DAF7D0C176B425526D7A35288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3C3C516E92CB6B19237C1F6843273EF /* Build configuration list for PBXNativeTarget "ImageManager" */ = {
+		9FA49A0C9097276458F0575CDAE99268 /* Build configuration list for PBXNativeTarget "Pods-ImageManager_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F12ECCA3DF5AF31EBB5D1A49B56DDA6 /* Debug */,
-				C63E9EA42837D5A4CCCAFB821913313F /* Release */,
+				2CEB9280B21C00EEF041A4A9F84D2D34 /* Debug */,
+				E9DED010325A28795687349BA9C90FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4AF07160AF2303E17CB628F08F9831C /* Build configuration list for PBXNativeTarget "ImageManager-ImageManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A25DF86110A994DA04108FA5EF46782 /* Debug */,
+				64E1CAC8734A9DE284748EF87C3C5DC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BB41747E0B3F4D126CB4B75303B7BA /* Build configuration list for PBXNativeTarget "ImageManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42F65C414563B04411898D91EF43596 /* Debug */,
+				0BB240637BD319FECB0CD939A81FC267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

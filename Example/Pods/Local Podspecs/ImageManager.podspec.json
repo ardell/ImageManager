@@ -1,25 +1,30 @@
 {
   "name": "ImageManager",
   "version": "0.1.0",
-  "summary": "A short description of ImageManager.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/ImageManager",
+  "summary": "Save/load images with a common interface.",
+  "description": "Save and load images from either the ALAssetsLibrary or application\ndocuments directory with a common interface. Promise-enabled using\nPromiseKit.",
+  "homepage": "https://github.com/ardell/ImageManager",
   "license": "MIT",
   "authors": {
     "Jason Ardell": "ardell@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/ImageManager.git",
+    "git": "https://github.com/ardell/ImageManager.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "ImageManager": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "PromiseKit/Promise": [
+      "~> 1.6"
     ]
   }
 }

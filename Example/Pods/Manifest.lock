@@ -1,5 +1,7 @@
 PODS:
-  - ImageManager (0.1.0)
+  - ImageManager (0.1.0):
+    - PromiseKit/Promise (~> 1.6)
+  - PromiseKit/Promise (1.6.0)
 
 DEPENDENCIES:
   - ImageManager (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ImageManager: 552c514a945b123998cc2dd0cd0fdc46aa505c45
+  ImageManager: 32aaa80a691a5b69d2a26929081c324769572aed
+  PromiseKit: 6be651503d4af22830b5313be993c5a0ef77bf77
 
 COCOAPODS: 0.39.0
