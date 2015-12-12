@@ -11,6 +11,7 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		8A7241671C1BA6B100028667 /* IMGAssetsLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7241661C1BA6B100028667 /* IMGAssetsLibraryTests.m */; };
 		8A76080F1C1885E200D9826C /* IMGDocumentsDirectoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76080E1C1885E200D9826C /* IMGDocumentsDirectoryTests.m */; };
 		9CF70CEF40F9F27F7BE0E16C /* Pods_ImageManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC4294650ADD14D4708C725 /* Pods_ImageManager_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		8A7241661C1BA6B100028667 /* IMGAssetsLibraryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAssetsLibraryTests.m; sourceTree = "<group>"; };
 		8A76080E1C1885E200D9826C /* IMGDocumentsDirectoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGDocumentsDirectoryTests.m; sourceTree = "<group>"; };
 		9BC4294650ADD14D4708C725 /* Pods_ImageManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAEAC3496DEF88F51BCD2CE /* Pods-ImageManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageManager_Tests/Pods-ImageManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8A7241661C1BA6B100028667 /* IMGAssetsLibraryTests.m */,
 				8A76080E1C1885E200D9826C /* IMGDocumentsDirectoryTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7241671C1BA6B100028667 /* IMGAssetsLibraryTests.m in Sources */,
 				8A76080F1C1885E200D9826C /* IMGDocumentsDirectoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

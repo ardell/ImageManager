@@ -7,9 +7,14 @@
 //
 
 #import "IMGAssetsLibrary.h"
-#import <AssetsLibrary/AssetsLibrary.h>
 
 @implementation IMGAssetsLibrary
+
++ (ALAssetsLibrary *)assetsLibrary
+{
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    return library;
+}
 
 + (BOOL)matchesURI:(NSString *)uri
 {
@@ -21,7 +26,7 @@
 {
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
         NSURL *url = [NSURL URLWithString:uri];
-        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+        ALAssetsLibrary *library = [[self class] assetsLibrary];
         [library assetForURL:url resultBlock:^(ALAsset *asset) {
             if (asset==nil) {
                 NSError *error = nil;
@@ -47,7 +52,7 @@
 {
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
         UIImage *image = [UIImage imageWithData:data];
-        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+        ALAssetsLibrary *library = [[self class] assetsLibrary];
         ALAssetOrientation orientation = [image imageOrientation];
         [library writeImageToSavedPhotosAlbum:image.CGImage
                                   orientation:orientation

@@ -1,10 +1,13 @@
 PODS:
   - ImageManager (0.1.0):
     - PromiseKit/Promise (~> 1.6)
+  - OCMock (3.2)
   - PromiseKit/Promise (1.6.0)
 
 DEPENDENCIES:
   - ImageManager (from `../`)
+  - OCMock
+  - PromiseKit/Promise (~> 1.6)
 
 EXTERNAL SOURCES:
   ImageManager:
@@ -12,6 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ImageManager: 32aaa80a691a5b69d2a26929081c324769572aed
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
   PromiseKit: 6be651503d4af22830b5313be993c5a0ef77bf77
 
 COCOAPODS: 0.39.0

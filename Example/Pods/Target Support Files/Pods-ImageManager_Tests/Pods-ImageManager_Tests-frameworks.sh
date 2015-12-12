@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-ImageManager_Tests/ImageManager.framework"
+  install_framework "Pods-ImageManager_Tests/OCMock.framework"
   install_framework "Pods-ImageManager_Tests/PromiseKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-ImageManager_Tests/ImageManager.framework"
+  install_framework "Pods-ImageManager_Tests/OCMock.framework"
   install_framework "Pods-ImageManager_Tests/PromiseKit.framework"
 fi
