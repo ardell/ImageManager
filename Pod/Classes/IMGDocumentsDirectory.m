@@ -62,17 +62,21 @@
 + (PMKPromise *)deleteFromURI:(NSString *)uri
 {
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
-        NSString *path = [IMGDocumentsDirectory _pathFromURI:uri];
-
         // Resolve (nothing to do) if file doesn't exist
-        if (![IMGDocumentsDirectory _fileExistsAtPath:path]) {
+        if (![IMGDocumentsDirectory fileExistsAtURI:uri]) {
             resolve(nil);
             return;
         }
 
+        // Calculate full path
+        NSString *path = [IMGDocumentsDirectory _pathFromURI:uri];
+        NSString *documentsDirectory = [[self class] _documentsDirectory];
+        NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
         NSFileManager *fileManager = [NSFileManager defaultManager];
+
+        // Delete file
         NSError *error;
-        [fileManager removeItemAtPath:path error:&error];
+        [fileManager removeItemAtPath:fullPath error:&error];
         resolve(error);
     }];
 }
@@ -87,7 +91,7 @@
     NSString *path = [[self class] _pathFromURI:uri];
     NSString *documentsDirectory = [[self class] _documentsDirectory];
     NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:path];
-    return [[NSFileManager defaultManager] fileExistsAtPath:fullPath];
+    return (BOOL)[[NSFileManager defaultManager] fileExistsAtPath:fullPath];
 }
 
 #pragma Private methods
