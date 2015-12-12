@@ -54,11 +54,11 @@
     void (^proxyBlock)(NSInvocation *) = ^(NSInvocation *invocation) {
         void (^passedBlock)(NSURL *assetURL, NSError *error);
         [invocation getArgument:&passedBlock atIndex:4];
-        passedBlock(url, nil);  // WHY, oh WHY isn't this called?!
+        passedBlock(url, nil);
     };
-    [[[[library stub] ignoringNonObjectArgs] andDo:proxyBlock] writeImageToSavedPhotosAlbum:NULL
-                                                                                orientation:NULL
-                                                                            completionBlock:[OCMArg any]];
+    [[[library stub] andDo:proxyBlock] writeImageDataToSavedPhotosAlbum:[OCMArg any]
+                                                               metadata:[OCMArg any]
+                                                        completionBlock:[OCMArg any]];
 
     // Stub out [IMGAssetsLibrary assetsLibrary] to return our stub library
     id mock = [OCMockObject mockForClass:[IMGAssetsLibrary class]];

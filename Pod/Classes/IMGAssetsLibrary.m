@@ -51,18 +51,16 @@
 + (PMKPromise *)saveData:(NSData *)data
 {
     return [PMKPromise promiseWithResolver:^(PMKResolver resolve) {
-        UIImage *image = [UIImage imageWithData:data];
         ALAssetsLibrary *library = [[self class] assetsLibrary];
-        ALAssetOrientation orientation = [image imageOrientation];
-        [library writeImageToSavedPhotosAlbum:image.CGImage
-                                  orientation:orientation
-                              completionBlock:^(NSURL *assetURL, NSError *error){
-                                  if (error) {
-                                      resolve(error);
-                                  } else {
-                                      resolve([assetURL absoluteString]);
-                                  }
-                              }];
+        [library writeImageDataToSavedPhotosAlbum:data
+                                         metadata:@{}
+                                  completionBlock:^(NSURL *assetURL, NSError *error) {
+                                      if (error) {
+                                          resolve(error);
+                                      } else {
+                                          resolve([assetURL absoluteString]);
+                                      }
+                                  }];
     }];
 }
 
