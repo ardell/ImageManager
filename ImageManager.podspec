@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ImageManager"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Save/load images with a common interface."
 
   # This description is used to generate tags and improve search results.
